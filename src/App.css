@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App {  
   color: white;
+  background-color: #15202B;  
 }
 
-.App-link {
-  color: #61dafb;
+.hrVertical {
+  border-left: 1px solid #26323C;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:412px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Menu Button Page*/
+.hrHorizontal{
+  border: 1px solid#26323C;
+  width: 100%;
+}
+
+.Button {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown { width: fit-content; }
+
+.dropdown:hover .dropdown-submenu-items {
+  display: none;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-items {
+  display: block;
+}
+
+.dropdown-submenu-items{
+  position: absolute;
+  background-color: white;
+  border-radius: 4px;
+  left: 99%;
+  margin-top: -15px;
+  /* margin-left: -35px; */
+  min-width: 160px;
+}
+
+/*Home Button Page*/
+.Tweets{
+  margin:0;
+  padding: 15px;
+}
+
+.tweetProfImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 49px;
+}
+
+.tweetContent{
+  margin:0
+}
+
+.TweetProfNameLink{
+  font-family: inherit;
+  font-family: inherit;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.TweetProfNameLink:hover { color: white; }
+.profNameLabel{
+  color:#6A7986
+}
+
+.bottomBtns{
+  padding-top:10px;  
+}
+
+.glyphicon {
+    background-color: transparent;
+    border: transparent;
+    padding: 0;    
+    width: 30px;
+    height: 25px;
+    border-radius: 10px;
+    margin-right:57px;
+}
+
+.glyphicon-retweet:hover {
+  background-color: #2dbc45;
+  color: #1e7f2e
+}
+
+.glyphicon-heart-empty:hover {
+  background-color: #c63131;
+  color: #661d1d
+}
+
+.glyphicon-comment:hover{
+  background-color: #192734;
+  color: #1DA1F2
+}
+
+.glyphicon-share-alt:hover{
+  background-color: #192734;
+  color: #1DA1F2
+}
+
+/*Modal*/
+
+.modal-backdrop{
+  opacity: 0.36;
+}
+.modal-dialog {
+  width: max-content;
+  margin: 30px auto;
+  /* left: 150px;
+  top: 250px;   */
+    
+  width: max-content;
+}
+.modalContent{
+  background-color: transparent;
+}
+.modal-body {
+  padding: 2px;
+  background-color: #15202B;
+  border-color: transparent;
+  border-radius: 4px;
+} 
+.btnModalBtn{
+  background-color: transparent;
+  border: transparent;  
+  text-align: left;
 }
